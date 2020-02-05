@@ -36,6 +36,193 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="css/styles.css">
+<!-- Quantcast Choice. Consent Manager Tag -->
+<script type="text/javascript" async=true>
+    var elem = document.createElement('script');
+    elem.src = 'https://quantcast.mgr.consensu.org/cmp.js';
+    elem.async = true;
+    elem.type = "text/javascript";
+    var scpt = document.getElementsByTagName('script')[0];
+    scpt.parentNode.insertBefore(elem, scpt);
+    (function() {
+    var gdprAppliesGlobally = true;
+    function addFrame() {
+        if (!window.frames['__cmpLocator']) {
+        if (document.body) {
+            var body = document.body,
+                iframe = document.createElement('iframe');
+            iframe.style = 'display:none';
+            iframe.name = '__cmpLocator';
+            body.appendChild(iframe);
+        } else {
+            // In the case where this stub is located in the head,
+            // this allows us to inject the iframe more quickly than
+            // relying on DOMContentLoaded or other events.
+            setTimeout(addFrame, 5);
+        }
+        }
+    }
+    addFrame();
+    function cmpMsgHandler(event) {
+        var msgIsString = typeof event.data === "string";
+        var json;
+        if(msgIsString) {
+        json = event.data.indexOf("__cmpCall") != -1 ? JSON.parse(event.data) : {};
+        } else {
+        json = event.data;
+        }
+        if (json.__cmpCall) {
+        var i = json.__cmpCall;
+        window.__cmp(i.command, i.parameter, function(retValue, success) {
+            var returnMsg = {"__cmpReturn": {
+            "returnValue": retValue,
+            "success": success,
+            "callId": i.callId
+            }};
+            event.source.postMessage(msgIsString ?
+            JSON.stringify(returnMsg) : returnMsg, '*');
+        });
+        }
+    }
+    window.__cmp = function (c) {
+        var b = arguments;
+        if (!b.length) {
+        return __cmp.a;
+        }
+        else if (b[0] === 'ping') {
+        b[2]({"gdprAppliesGlobally": gdprAppliesGlobally,
+            "cmpLoaded": false}, true);
+        } else if (c == '__cmp')
+        return false;
+        else {
+        if (typeof __cmp.a === 'undefined') {
+            __cmp.a = [];
+        }
+        __cmp.a.push([].slice.apply(b));
+        }
+    }
+    window.__cmp.gdprAppliesGlobally = gdprAppliesGlobally;
+    window.__cmp.msgHandler = cmpMsgHandler;
+    if (window.addEventListener) {
+        window.addEventListener('message', cmpMsgHandler, false);
+    }
+    else {
+        window.attachEvent('onmessage', cmpMsgHandler);
+    }
+    })();
+    window.__cmp('init', {
+    		'Language': 'en',
+		'Initial Screen Reject Button Text': 'I DO NOT ACCEPT',
+		'Initial Screen Accept Button Text': 'I ACCEPT',
+		'Purpose Screen Body Text': 'You can set your consent preferences and determine how you want your data to be used based on the purposes below. You may set your preferences for us independently from those of third-party partners. Each purpose has a description so that you know how we and partners use your data.',
+		'Purpose Screen Vendor Link Text': 'See Vendors',
+		'Purpose Screen Save and Exit Button Text': 'SAVE &amp; EXIT',
+		'Vendor Screen Body Text': 'You can set consent preferences for individual third-party partners we work with below. Expand each company list item to see what purposes they use data for to help make your choices. In some cases, companies may use your data without asking for your consent, based on their legitimate interests. You can click on their privacy policy links for more information and to object to such processing. ',
+		'Vendor Screen Accept All Button Text': 'ACCEPT ALL',
+		'Vendor Screen Reject All Button Text': 'REJECT ALL',
+		'Vendor Screen Purposes Link Text': 'Back to Purposes',
+		'Vendor Screen Save and Exit Button Text': 'SAVE &amp; EXIT',
+		'Initial Screen Body Text': 'We and our partners use technologies, such as cookies, and process personal data, such as IP addresses and cookie identifiers, to personalise ads and content based on your interests, measure the performance of ads and content, and derive insights about the audiences who saw ads and content. Click below to consent to the use of this technology and the processing of your personal data for these purposes. You can change your mind and change your consent choices at any time by returning to this site. ',
+		'Initial Screen Body Text Option': 1,
+		'Publisher Name': 'Woney.co',
+		'Publisher Logo': 'https://i.postimg.cc/Y9DTrH8L/woney-logo-blue.png',
+		'Display UI': 'always',
+		'Post Consent Page': 'https://woney.co/',
+		'Consent Scope': 'service',
+        'Default Value for  Toggles': 'on',  });
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag -->
+    <style>
+        .qc-cmp-button {
+          background-color: #1494ff !important;
+          border-color: #1494ff !important;
+        }
+        .qc-cmp-button:hover {
+          background-color: transparent !important;
+          border-color: #1494ff !important;
+        }
+        .qc-cmp-alt-action,
+        .qc-cmp-link {
+          color: #1494ff !important;
+        }
+        .qc-cmp-button.qc-cmp-secondary-button:hover
+         {
+          border-color: transparent !important;
+          background-color: #1494ff !important;
+        }
+        .qc-cmp-button {
+          color: #ffffff !important;
+        }
+        .qc-cmp-button.qc-cmp-secondary-button {
+          color: #ffffff !important;
+        }
+        .qc-cmp-button.qc-cmp-button.qc-cmp-secondary-button:hover {
+          color:#ffffff !important;
+        }
+        .qc-cmp-button.qc-cmp-secondary-button {
+          border-color: #315d7d !important;
+          background-color: #315d7d !important;
+        }
+        .qc-cmp-ui,
+        .qc-cmp-ui .qc-cmp-main-messaging,
+        .qc-cmp-ui .qc-cmp-messaging,
+        .qc-cmp-ui .qc-cmp-beta-messaging,
+        .qc-cmp-ui .qc-cmp-title,
+        .qc-cmp-ui .qc-cmp-sub-title,
+        .qc-cmp-ui .qc-cmp-purpose-info,
+        .qc-cmp-ui .qc-cmp-table,
+        .qc-cmp-ui .qc-cmp-table-header,
+        .qc-cmp-ui .qc-cmp-vendor-list,
+        .qc-cmp-ui .qc-cmp-vendor-list-title {
+            color: #757b80 !important;
+        }
+        .qc-cmp-ui a,
+        .qc-cmp-ui .qc-cmp-alt-action,
+        .qc-cmp-toggle-status  {
+          color: #1494ff !important;
+        }
+                .qc-cmp-ui {
+                    background-color: #ffffff !important;
+                }
+                .qc-cmp-publisher-purposes-table .qc-cmp-table-header {
+                  background-color: #ffffff !important;
+                }
+                .qc-cmp-publisher-purposes-table .qc-cmp-table-row {
+                  background-color: #ffffff !important;
+                }
+                .qc-cmp-vendor-list .qc-cmp-vendor-row {
+                  background-color: #ffffff !important;
+                }
+                .qc-cmp-vendor-list .qc-cmp-vendor-row-header {
+                    background-color: #ffffff !important;
+                  }
+                .qc-cmp-table {
+                    border: 1px solid #000000 !important;
+                }
+                .qc-cmp-table-row {
+                    border-top: 1px solid #000000 !important;
+                }
+                .qc-cmp-vendor-list {
+                    border: 1px solid #000000 !important;
+                }
+                .qc-cmp-vendor-row {
+                    border-top: 1px solid #000000 !important;
+                }
+                .qc-cmp-arrow-down {
+                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E %3Cpolyline points='2 5 8 11 14 5'/%3E %3C/svg%3E") center no-repeat;
+                }
+                .qc-cmp-toggle-status {
+                    color: #000000 !important;
+                }
+                .qc-cmp-table-header {
+                    color: #000000;
+                }
+        .qc-cmp-small-toggle.qc-cmp-toggle-on,
+        .qc-cmp-toggle.qc-cmp-toggle-on {
+            background-color: #1494ff !important;
+            border-color: #1494ff !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -65,7 +252,7 @@
                         <a class="nav-link" href="#info-one">Diagnóstico</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contácto</a>
+                        <a class="nav-link" href="../CCM/contact.html">Contácto</a>
                     </li>
                 </ul>
             </div>
@@ -118,38 +305,40 @@
     </section>
     <!--INFO THREE-->
     <section id="info-three" class="about">
-        <div class="container col-10 text-dark bg-mute">
+        <div class="container col-10 text-dark bg-light">
             <div class="card-body text-center">
-                <h2 class="card-title display-4 text-primary">MARKETING</h2>
-                <p class="h3 card-text">Te asesoramos para desarrollar al máximo una estrategia de comunicación efectiva.</p>
-                    <ui class="h4">
-                        <li>Estrategia de Marketing</li>
-                        <li>Gestión de Redes Sociales</li>
-                        <li>Campañas de Email Marketing</li>
-                        <li>Estrategia de Contenidos</li>
-                        <li>SEO/SEM</li>
-                    </ui>
+                <h2 class="card-title display-5 text-primary">MARKETING</h2>
+                <p class="h3 card-text">Te asesoramos para desarrollar al máximo una estrategia de comunicación
+                    efectiva.</p>
+                <ul class="h4">
+                    <li>Estrategia de Marketing</li>
+                    <li>Gestión de Redes Sociales</li>
+                    <li>Campañas de Email Marketing</li>
+                    <li>Estrategia de Contenidos</li>
+                    <li>SEO/SEM</li>
+                </ul>
             </div>
         </div>
         <br>
-        <div class="container col-10 text-dark">
+        <div class="container col-10 text-dark bg-light">
             <div class="card-body text-center">
-                <h2 class="card-title display-4 text-primary">VENTAS</h2>
-                <p class="h3 card-text">Creamos sistemas de ventas que permitan escalar el negocio al siguiente nivel.</p>
-                    <ul class="h4">
-                        <li>Estrategia de Ventas</li>
-                        <li>Fuerza de Ventas Externa (A éxito)</li>
-                        <li>Televentas (A éxito)</li>
-                        <li>Comprador Misterioso</li>
-                    </ul>
+                <h2 class="card-title display-5 text-primary">VENTAS</h2>
+                <p class="h3 card-text">Creamos sistemas de ventas que permitan escalar el negocio al siguiente nivel.
+                </p>
+                <ul class="h4">
+                    <li>Estrategia de Ventas</li>
+                    <li>Fuerza de Ventas Externa (A éxito)</li>
+                    <li>Televentas (A éxito)</li>
+                    <li>Comprador Misterioso</li>
+                </ul>
             </div>
         </div>
         <br>
-        <div class="container col-10 text-dark bg-mute">
+        <div class="container col-10 text-dark bg-light">
             <div class="card-body text-center">
-                <h2 class="card-title display-4 text-primary">NEGOCIO</h2>
+                <h2 class="card-title display-5 text-primary">NEGOCIO</h2>
                 <p class="h3 card-text">Recibe asesoramiento en aspectos claves de tu empresa.</p>
-                <ul class="h4">    
+                <ul class="h4">
                     <li>Plan de Negocios</li>
                     <li>Modelos de Negocio</li>
                     <li>Sitio Web (Producto Minimo Viable)</li>
@@ -157,32 +346,50 @@
                 </ul>
             </div>
         </div>
+        <br>
     </section>
 
     <!--INFO FOUR-->
     <section id="info-four">
-        <div class="h2 text-primary text-center">NUESTROS PRECIOS</div>
-        <br>
-        <div class="container col-3 text-white">
-            <div class="card-body text-center bg white">
-                <h3 class="card-title text-white">SMART</h3>
-                <br>
-                <p class="h2  card-text">50€</p>
-                <p class="h2  card-text">1 hora de asesoría</p>
+        <div class="title display-4 text-primary text-center">NUESTROS PRECIOS</div>
+        <div class="container bg-light my-5">
+            <div class="container col-3 bg-white">
+                <div class="card-body text-center bg white">
+                    <h2 class="card-title text-primary">SMART</h2>
+                    <br>
+                    <p class="h3 card-text display-4">50€</p>
+                    <p class="h4 card-text">1 hora de asesoría</p>
+                    <br>
+                    <a href="https://api.whatsapp.com/send?phone=34611626712&text=&source=&data="
+                    class="btn btn-secondary">Comienza aquí
+                    </a>
+                </div>
             </div>
             <br>
-            <div class="card-body text-center">
-                <h3 class="card-title text-white">IN-HOUSE</h3>
-                <br>
-                <p class="h2  card-text">400€</p>
-                <p class="h2  card-text">10 horas de asesoría</p>
+            <div class="container col-3 bg-white">
+                <div class="card-body text-center">
+                    <h2 class="card-title text-primary">WISE</h2>
+                    <br>
+                    <p class="h3 card-text display-4">400€</p>
+                    <p class="h4 card-text">10 horas de asesoría</p>
+                    <br>
+                    <a href="https://api.whatsapp.com/send?phone=34611626712&text=&source=&data="
+                    class="btn btn-secondary">Comienza aquí
+                    </a>
+                </div>
             </div>
             <br>
-            <div class="card-body text-center">
-                <h3 class="card-title text-white">IN-HOUSE</h3>
-                <br>
-                <p class="h2  card-text">700€</p>
-                <p class="h2  card-text">20 horas de asesoría</p>
+            <div class="container col-3 bg-white">
+                <div class="card-body text-center">
+                    <h2 class="card-title text-primary">IN-HOUSE</h2>
+                    <br>
+                    <p class="h3 card-text display-4">700€</p>
+                    <p class="h4 card-text">20 horas de asesoría</p>
+                    <br>
+                    <a href="https://api.whatsapp.com/send?phone=34611626712&text=&source=&data="
+                    class="btn btn-secondary">Comienza aquí
+                    </a>
+                </div>
             </div>
         </div>
     </section>

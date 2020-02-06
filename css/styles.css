@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background:#ffffff
 }
 
@@ -18,7 +18,34 @@ footer {
     margin-top: 40px;
 }
 
-.list ul {
+.about ul {
     list-style: none;
-    padding: 0 
+}
+
+.about ul li {
+    padding: .3em;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #0072ff;
+    color: #fff;
+    transition: background-color 1s ease-out;
+}
+
+.button {
+    color: #fff;
+    width:  100%;
+    padding: .7em;
+    border: none;
+    background: #2b5587;
+    border-bottom: 1px solid #2a5282;
+    border-radius: 10px;
+}
+
+.price {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3 ); 
+    border-radius: 10px;
+    padding: 2em;
+
 }

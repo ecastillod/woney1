@@ -1,55 +1,55 @@
-    {% extends "layout.html" %}
+{% extends "layout.html" %}
 
-    {% block content %}
+{% block content %}
 <!--CUSTOM CSS-->
 <link rel="stylesheet" href="css/contacto.css">
-    <div class="content">
-        <h1 class=logo>Contáctanos</h1>
-        <div class="contact-wrapper">
-            <div class="contact-form">
-                <h3>Contáctanos</h3>
-                <form action="">
-                    <p>
-                        <label>Nombre</label>
-                        <input type="text" name="name">
-                    </p>
-                    <p>
-                        <label>Apellido</label>
-                        <input type="text" name="lastname">
-                    </p>
-                    <p>
-                        <label>Correo electrónico</label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Teléfono</label>
-                        <input type="tel" name="phone">
-                    </p>
-                    <p>
-                        <label>Mensaje</label>
-                        <textarea name="message" rows="3"></textarea>
-                    </p>
-                    <p>
-                        <button type="submit">
-                            Enviar
-                        </button>
-                    </p>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h4>Más información</h4>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i>28006, Madrid</li>
-                    <li><i class="fas fa-phone"></i>(611) 626-712</li>
-                    <li><i class="fas fa-envelope-open-text"></i>info@woney.co</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quisquam rerum porro aliquid
-                    molestias harum omnis? Non corrupti ipsam rerum.</p>
-                <br>
-                <p>Woney.co</p>
-            </div>
-
+<div class="content">
+    <h1 class=logo>Contáctanos</h1>
+    <div class="contact-wrapper">
+        <div class="contact-form">
+            <h3>Contáctanos</h3>
+            <form action="">
+                <p>
+                    <label>Nombre</label>
+                    <input type="text" name="name">
+                </p>
+                <p>
+                    <label>Apellido</label>
+                    <input type="text" name="lastname">
+                </p>
+                <p>
+                    <label>Correo electrónico</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label>Teléfono</label>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label>Mensaje</label>
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p>
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </p>
+            </form>
         </div>
+        <div class="contact-info">
+            <h4>Más información</h4>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i>28006, Madrid</li>
+                <li><i class="fas fa-phone"></i>(611) 626-712</li>
+                <li><i class="fas fa-envelope-open-text"></i>info@woney.co</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem quisquam rerum porro aliquid
+                molestias harum omnis? Non corrupti ipsam rerum.</p>
+            <br>
+            <p>Woney.co</p>
+        </div>
+
     </div>
+</div>
 
 {% endblock %}

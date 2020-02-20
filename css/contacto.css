@@ -1,5 +1,5 @@
 footer {
-    background: #0072ff;
+    background: #347EFD;
     padding: 30px 0 30px 0;
     color: #ffffff;
     text-align: center;
@@ -77,7 +77,7 @@ body {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background-color: #0072ff;
+    background-color: #347EFD;
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0; 

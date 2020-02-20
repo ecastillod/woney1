@@ -1,5 +1,5 @@
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Lato', sans-serif;
     background:#ffffff
 }
 
@@ -7,11 +7,58 @@ header {
     margin-top: 75px;
 }
 
-.center{
+.title {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 5em;
+    font-size: 60px;
+    color: #347EFD;
+}
+
+.subtitle {
+    font-size: 35px;
+    color: #000000;
+}
+
+.button {
+    color: #fff;
+    width:  100%;
+    padding: .7em;
+    border: none;
+    background: #5cb85c;
+    border-radius: 10px;
+}
+
+.action {
+    padding: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: none;
+}
+
+.human button {
+    color: #fff;
+    width:  100%;
+    padding: .7em;
+    border: none;
+    background: #222222;
+    border-radius: 10px;
+}
+
+.business button {
+    color: #fff;
+    width:  100%;
+    padding: .7em;
+    border: none;
+    background: #222222;
+    border-radius: 10px;
+}
+
+.center {
     left: 50%;
 }
 footer {
-    background: #0072ff;
+    background: #347EFD;
     padding:30px 0 30px 0;
     color: #ffffff;
     text-align: center;
@@ -28,18 +75,9 @@ footer {
 
 .button:hover,
 .button:focus {
-    background-color: #0072ff;
+    background-color: #347EFD;
     color: #fff;
     transition: background-color 1s ease-out;
-}
-
-.button {
-    color: #fff;
-    width:  100%;
-    padding: .7em;
-    border: none;
-    background: #5cb85c;
-    border-radius: 10px;
 }
 
 .row {
@@ -47,7 +85,7 @@ footer {
     margin-right: auto;
 }
 .unique {
-    color: #0072ff;
+    color: #347EFD;
 }
 
 .block {
@@ -55,7 +93,7 @@ footer {
 }
 
 .block strong {
-    color: #0072ff;
+    color: #347EFD;
 }
 
 .target {
@@ -67,7 +105,7 @@ footer {
     margin-top: 20px;
 }
 .target strong {
-    color: #0072ff;
+    color: #347EFD;
 }
 
 .card {

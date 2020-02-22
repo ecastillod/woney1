@@ -1,17 +1,25 @@
 body {
     font-family: 'Lato', sans-serif;
-    background:#ffffff
+    background:#ffffff;
 }
 
 header {
     margin-top: 75px;
 }
 
-.title {
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 5em;
-    font-size: 60px;
+.navbar {
+    font-size: 20px;
+}
+
+.crown {
+    margin-top: 2em;
+}
+
+.first {
     color: #347EFD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    margin-top: 5em;
 }
 
 .subtitle {
@@ -19,44 +27,46 @@ header {
     color: #000000;
 }
 
-.button {
-    color: #fff;
-    width:  100%;
-    padding: .7em;
-    border: none;
-    background: #5cb85c;
-    border-radius: 10px;
+.row {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .action {
-    padding: 2em;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    border: none;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 12em;
+    width: 60%;
 }
 
-.human button {
+.human {
+    padding: 2px 16px;
+}
+
+.business {
+    padding: 2px 16px;
+}
+
+.button {
     color: #fff;
-    width:  100%;
-    padding: .7em;
-    border: none;
-    background: #222222;
+    width:  100%; 
+    padding: 1em;
+    font-size: 20px;
+    background: #a1a1a1;
     border-radius: 10px;
 }
 
-.business button {
+.button:hover,
+.button:focus {
+    background-color: #347EFD;
     color: #fff;
-    width:  100%;
-    padding: .7em;
-    border: none;
-    background: #222222;
-    border-radius: 10px;
+    transition: background-color 1s ease-out;
 }
 
 .center {
     left: 50%;
 }
+
 footer {
     background: #347EFD;
     padding:30px 0 30px 0;
@@ -73,17 +83,10 @@ footer {
     padding: .3em;
 }
 
-.button:hover,
-.button:focus {
-    background-color: #347EFD;
-    color: #fff;
-    transition: background-color 1s ease-out;
+.card {
+    border: none;
 }
 
-.row {
-    margin-left: auto;
-    margin-right: auto;
-}
 .unique {
     color: #347EFD;
 }
@@ -106,10 +109,6 @@ footer {
 }
 .target strong {
     color: #347EFD;
-}
-
-.card {
-    border: none;
 }
 
 #info-one {

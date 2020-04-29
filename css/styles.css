@@ -112,8 +112,10 @@ header {
 }
 
 .montserrat-three {
-    margin-top: 8em;
+    margin-top: 4em;
     margin-bottom: 0;
+    padding-top: 3em;
+    padding-bottom: 0;
     color: #304b8a;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -129,7 +131,6 @@ header {
     padding-top: 1em;
     margin-left: 2em;
     margin-right: 2em;
-    background-color: #fff;
 }
 
 .row {
@@ -146,7 +147,7 @@ header {
 .tria-dos {
     position: absolute;
     left: 0em;
-    top: 106.4em;
+    top: 102em;
     width: 0;
     height: 0; 
     border-top: 200px solid transparent;
@@ -156,6 +157,10 @@ header {
 
 #info-three {
     background-color: #fff;
+    margin-top: 4em;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    margin-bottom: 4em;
 
 }
 
@@ -230,7 +235,7 @@ header {
 .tria-tres {
     position: absolute;
     right: 0em;
-    top: 151.85em;
+    top: 160.1em;
     width: 0;
     height: 0; 
     border-top: 200px solid transparent;
@@ -240,11 +245,12 @@ header {
 
 #info-four {
     background-color: #304b8a;
-    margin-top: 4em;
+    margin-top: 5em;
     margin-bottom: 2em;
     margin-left: 0;
     margin-right: 0;
-    padding-bottom: 2em;
+    padding-bottom: 8em;
+    padding-top: 5em;
 }
 
 .montserrat-six {
@@ -283,14 +289,21 @@ header {
     padding-right: 3em;
     padding-top: .5em;
     padding-bottom: 0;
-    background-color: #f7c631;
 }
 
 .montserrat-seven {
     font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    line-height: 30px;
-    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    color: #f7c631;
+}
+
+#info-five {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 4em;
 }
 
 .montserrat-eight {
@@ -321,7 +334,7 @@ header {
 .tria-cuatro {
     position: absolute;
     left: 0em;
-    top: 202em;
+    top: 221.3em;
     width: 0;
     height: 0; 
     border-top: 200px solid transparent;

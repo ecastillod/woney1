@@ -1,9 +1,9 @@
 body {
-    background: #ffffff;
+    background: #e7e7e7;
 }
 
 #blog {
-    background: #f0f0f0;
+    background: #ffffff;
     padding-bottom: 4em;
 
 }
@@ -87,6 +87,14 @@ header {
     width: 90%;
 }
 
+.back-two {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    box-shadow: 2px 8px 10px -3px rgba(65, 65, 65, 0.75);
+}
+
 a.custom-card,
 a.custom-card:hover { 
     color: inherit;
@@ -126,6 +134,26 @@ a.custom-card:hover {
 
 .row {
     margin-top: 1em;
+}
+
+.text-credit {
+    margin-top: 0;
+    color: #8d8d8d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.building {
+    color: #838383;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.building:hover,
+.building:focus {
+    color: #347EFD;
+    transition: background-color .5s ease-out;
 }
 
 .noto-two {

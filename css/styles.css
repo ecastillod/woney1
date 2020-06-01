@@ -456,6 +456,11 @@ header {
     border-right: 200px solid #347EFD;    
 }
 
+.bg-light {
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+}
 
 .slogan {
     font-size: 35px;

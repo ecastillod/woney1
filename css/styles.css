@@ -133,7 +133,7 @@ header {
     margin-right: 2em;
 }
 
-.row {
+.iconos {
     color: #304b8a;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
@@ -247,6 +247,16 @@ header {
     background-color: #304b8a;
     margin-top: 5em;
     margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 8em;
+    padding-top: 5em;
+}
+
+#curso {
+    background-color: #304b8a;
+    margin-top: 5em;
+    margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 8em;
@@ -375,10 +385,76 @@ header {
     margin-right: 1em;
 }
 
+.montserrat-thirteen {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+}
 
+.texto-curso {
+    border-radius: 15px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.iconos-dos {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
 
+.fa-hand-holding-usd {
+    color: #fff;
+    margin-bottom: 10px;
+}
 
+.fa-toolbox {
+    color: #fff;
+    margin-bottom: 10px;
+}
 
+.fa-users {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.fa-chart-pie {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.fa-instagram {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.montserrat-fourteen {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.tria-cinco {
+    position: absolute;
+    right: 0em;
+    top: 281.4em;
+    width: 0;
+    height: 0; 
+    border-top: 200px solid transparent;
+    border-bottom: 200px solid transparent;
+    border-right: 200px solid #347EFD;    
+}
 
 
 .slogan {
@@ -471,11 +547,11 @@ header {
 }
 
 footer {
-    background: #347EFD;
+    background: #304b8a;
     padding:30px 0 30px 0;
     color: #ffffff;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 0;
 }
 
 .about ul {
@@ -484,6 +560,7 @@ footer {
 
 .card {
     border: none;
+    background-color: transparent;
 }
 
 .unique {

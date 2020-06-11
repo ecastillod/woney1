@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /lean-startup
+Sitemap: https://woney.co/sitemap.xml
